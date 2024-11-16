@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 1024px) {
+    .container {
+        width: 720px; /* Adjust for tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 400px; /* Adjust for mobile */
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 350px; /* Adjust for smaller devices */
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Additional responsive styles can be added here */
+
+
+
+.bg-purple {
+    background-color: #6b46c1;
+}
+.bg-emerald {
+    background-color: #10b981;
+}
+.bg-pink {
+    background-color: #ec4899;
+}
+.bg-blue {
+    background-color: #3b82f6;
+}
+
+#a{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(176, 176, 243);
+    
+}
+
+
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc; /* Light gray color */
+    margin: 20px 0;  /* Margin to give space above and below */
+}
+
+/*#weatherDescription{
+    border: 1px solid black;
+    background-color:rgb(69, 72, 76);
+    color: white;
+    margin: 4px;
+}*/
+
+
+
+
+.forecast-box {
+    width: 120px;           /* Fixed width */
+    height: 190px;          /* Fixed height */
+    margin: 4px;            /* Margin between boxes */
+    border: 2px solid black; /* Border */
+    background-color:#5b6a8d; /* Background color */
+    display: flex;           /* Flexbox to center content */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: space-between; /* Space between the elements */
+    align-items: center;     /* Center horizontally */
+    overflow: hidden;        /* Prevent overflow */
+    padding: 8px;            /* Padding inside the box */
+    font-size: 12px;         /* Smaller font size to fit text */
+}
+
+.forecast-box img {
+    max-width: 50px;        /* Limit image size */
+    max-height: 50px;       /* Limit image size */
+    margin-bottom: 8px;     /* Space between the icon and text */
+}
+
+.forecast-box h3 {
+    font-size: 10px;        /* Smaller font size for the date */
+    margin: 0;              /* No margin */
+    text-align: center;     /* Center the date */
+    
+}
+
+.forecast-box p {
+    margin: 2px 0;          /* Space between paragraphs */
+    text-align: center;     /* Center the text */
+}
+
+@media (max-width: 320px) {
+    #aa {
+        width: 280px;
+        height: 700px;
+    }
+    #a{
+        width: 250px;
+        height: 300px;
+        margin-left: 310px;
+    }
+     #a1{
+        width:280px ;
+        height: 60px; 
+    }
+    #b{
+        height:200px;
+        width: 350px;
+        margin-left: 290px;
+
+    }
+    #c{
+        margin-left: 290px;
+        width: 350px;
+        overflow: scroll;
+    
+    }
+
+    #WD{
+        width: 300px;
+        margin-left:100px;
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width: 375px) {
+    #aa {
+        width: 280px;
+        height: 700px;
+    }
+    #a{
+        width: 250px;
+        height: 300px;
+        margin-left: 310px;
+    }
+     #a1{
+        width:280px ;
+        height: 60px; 
+    }
+    #b{
+        height:200px;
+        width: 345px;
+        margin-left:-20px;
+
+    }
+    #c{
+        margin-left: 290px;
+        width: 350px;
+        overflow: scroll;
+    
+    }
+
+    #WD{
+        width: 300px;
+        margin-left:17px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1440px)
+{
+    #WD{
+        width: 1000px;
+        }
+
+        #aa{
+            background-color:#8dadd4;
+        }    
+}
+
+
+
+/* For Tablets and Medium Devices */
+@media (max-width: 1024px) {
+    #WD{
+    width: 1000px; height: 550px;
+    }
+    .main-box {
+        flex-direction: column;  /* Stack the current weather and forecast vertically */
+    }
+
+    .current-weather, .forecast {
+        width: 100%;
+    }
+
+    .forecast-box {
+        width: 48%;  /* 2 boxes in a row */
+        margin-bottom: 10px;
+        height: 200px;
+    }
+
+    #aa{
+        background-color:#8dadd4;
+    }
+}
+
+/* For iPhone SE and smaller screens 
+@media (max-width: 375px) {
+    .container {
+        padding: 10px;
+    }
+
+    
+    #WD{
+        width: 300px;
+        margin-left:100px;
+    }
+   
+    #body{
+        background-color:  #8dadd4;
+    }
+
+    #aa{
+        height:800px;
+        width: 400px;
+        background-color:#8dadd4;
+    }
+
+    #a{
+        margin-left: 310px;
+    }
+
+    #b{
+        height:200%px;
+        width: 350px;
+        margin-left: 290px;
+
+    }
+
+    #c{
+        margin-left: 290px;
+        width: 350px;
+        overflow: scroll;
+    
+    }
+
+    .main-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .current-weather, .forecast {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .forecast-box {
+        width: 100%;  /* Each forecast box should take full width on small screens */
+        /* margin-bottom: 10px;
+        height: auto;
+    }
+
+    .forecast-box img {
+        width: 50px;
+        height: 50px;
+    }
+}  */
+
+/* Additional Styling for Forecast Box */
+.forecast-box {
+    background-color: #5b6a8d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.forecast-box img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+
+.forecast-box h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.forecast-box p {
+    margin: 5px 0;
+}
+
+/* For the Current Weather Section */
+.current-weather {
+    background-color: rgb(176, 176, 243);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1;
+}
+
+#cityInput, #searchBtn, #locationBtn {
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#cityInput {
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Optional: Add Styling for Divider */
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
